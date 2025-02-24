@@ -22,7 +22,7 @@
                 <h3 class="mb-0">Edit Record</h3>
             </div>
             <div class="card-body">
-                <form action="<?= base_url('/records/update/' . $record['id']); ?>" method="post"  enctype="multipart/form-data" class="d-flex flex-column align-items-center">  <?= csrf_field() ?> 
+                <form action="<?= base_url('/products/update/' . $record['id']); ?>" method="post"  enctype="multipart/form-data" class="d-flex flex-column align-items-center">  <?= csrf_field() ?> 
                     
                     <div class="mb-3 w-75">
                         <label for="name" class="form-label">Name</label>

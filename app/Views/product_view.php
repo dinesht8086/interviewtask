@@ -32,7 +32,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form action="<?= base_url('/records/create'); ?>" method="post"  enctype="multipart/form-data">  <?= csrf_field() ?> 
+                            <form action="<?= base_url('/products/create'); ?>" method="post"  enctype="multipart/form-data">  <?= csrf_field() ?> 
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
@@ -89,10 +89,10 @@
                                         <?php endif; ?>
                                     </td>
                                     <td>
-                                        <a href="<?= base_url('/records/edit/' . $record['id']); ?>" class="btn btn-warning btn-sm">
+                                        <a href="<?= base_url('/products/edit/' . $record['id']); ?>" class="btn btn-warning btn-sm">
                                             <i class="bi bi-pencil"></i> Edit
                                         </a>
-                                        <a href="<?= base_url('/records/delete/' . $record['id']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">
+                                        <a href="<?= base_url('/products/delete/' . $record['id']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">
                                             <i class="bi bi-trash"></i> Delete
                                         </a>
                                     </td>
